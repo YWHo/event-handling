@@ -93,7 +93,9 @@ function changeColor(evt) {
   clickCount += 1;
   let remainder = clickCount % 5;
   switch (remainder) {
-    case 0: makeWhite(evt); blackText(evt); break;
+    case 0: makeWhite(evt); blackText(evt);
+            clickCount = 0; // reset count to 0
+            break;
     case 1: makeBlue(evt); whiteText(evt); break;
     case 2: makeGreen(evt); whiteText(evt); break;
     case 3: makeOrange(evt); whiteText(evt); break;
