@@ -14,3 +14,8 @@ div {
   border: 1px #ccc dotted;
   margin: 10px;
 }
+
+#four {
+  text-align: center;
+  user-select: none;
+}
